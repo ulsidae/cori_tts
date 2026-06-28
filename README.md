@@ -1,6 +1,6 @@
 # cori_tts 
 
-> An UX-oriented wrapper built on top of Piper TTS.
+> A UX-oriented wrapper built on top of Piper TTS.
 
 Long ago, I suffered from a severe cold that left me unable to speak.  
 In that silence, I started thinking: *what if I could prepare my voice in advance?*
