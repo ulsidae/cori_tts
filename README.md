@@ -1,4 +1,6 @@
-# cori_tts is a UX-oriented wrapper built on top of Piper TTS.
+# cori_tts 
+
+> a UX-oriented wrapper built on top of Piper TTS.
 
 Long ago, I suffered from a severe cold that left me unable to speak.  
 In that silence, I started thinking: *what if I could prepare my voice in advance?*
@@ -15,9 +17,9 @@ This document summarizes the cori_tts project and the design decisions behind bu
 
 ---
 
-⚠️ **Important**  
-cori_tts is a UX-oriented project built on top of Piper TTS.  
-It follows the same GNU GPL v3.0 license as Piper TTS and is freely available for use.
+> ⚠️ **Important**  
+> cori_tts is a UX-oriented project built on top of Piper TTS.  
+> It follows the same GNU GPL v3.0 license as Piper TTS and is freely available for use.
 
 ---
 
