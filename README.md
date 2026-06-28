@@ -112,11 +112,11 @@ Although primarily developer-oriented, it provided a far more practical path tow
 
 ## ⚙️ 3. Limitations of Piper TTS and improvements made
 
-While Piper TTS is powerful, it is clearly designed for developers.
+While Piper TTS is powerful, its primary interface is aimed at developers.
 
 It works well via Python or CLI usage, but from a non-technical perspective:
 
-- There is no intuitive UI  
+- Using Piper typically requires familiarity with the command line or Python.
 - Model switching is not user-friendly  
 - Quick testing requires setup knowledge  
 
