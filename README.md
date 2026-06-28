@@ -106,7 +106,7 @@ What stood out was:
 - Availability of prebuilt test voices  
 - A strong open-source ecosystem  
 
-Although primarily developer-oriented, it provided a far more practical path toward usable speech synthesis.
+Although its primary workflow is command-line based, it provided a far more practical path toward usable speech synthesis.
 
 ---
 
@@ -114,11 +114,11 @@ Although primarily developer-oriented, it provided a far more practical path tow
 
 While Piper TTS is powerful, its primary interface is aimed at developers.
 
-It works well via Python or CLI usage, but from a non-technical perspective:
+It works well when used through Python or the command line, but from a non-technical perspective:
 
 - Using Piper typically requires familiarity with the command line or Python.
-- Model switching is not user-friendly  
-- Quick testing requires setup knowledge  
+- Switching between models may be less convenient for non-technical users.
+- Quick testing generally requires some initial setup. 
 
 To address this, cori_tts was built as a usability-focused layer on top of Piper TTS.
 
