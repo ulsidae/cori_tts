@@ -17,9 +17,9 @@ This document summarizes the cori_tts project and the design decisions behind bu
 
 ---
 
-> ⚠️ **Important**  
-> cori_tts is a UX-oriented project built on top of Piper TTS.  
-> It follows the same GNU GPL v3.0 license as Piper TTS and is freely available for use.
+> ⚠️ **Important**
+> cori_tts is licensed under the GNU GPL v3.0, the same license used by Piper TTS.
+> It is freely available as open-source software.
 
 ---
 
