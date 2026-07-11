@@ -152,18 +152,27 @@ This also means cori_tts is not intended to replace Piper TTS, but to reduce fri
 
 ---
 
-## 📩 5. Feedback from upstream maintainers
+## 📩 5. Upstream Feedback and Licensing Discussion
 
-To ensure proper usage, I intentionally excluded Piper TTS source code from this project.
+- Running cori_tts requires placing `piper.exe` inside the `/piper` directory.
 
-As a result, running cori_tts requires placing `piper.exe` inside the `/piper` directory.
+To ensure proper licensing and compatibility, I contacted the Piper TTS upstream maintainer regarding the development of a usability-focused wrapper around Piper.
 
-Since this setup is not very user-friendly, I reached out to the upstream maintainers to confirm licensing and proper usage.
+The main questions were:
 
-Their response was:
+- Whether a wrapper-based approach for improving usability was appropriate
+- How the GPL license applies to a project built around Piper
+- Whether there were recommended approaches for improving local usage
 
-> TODO
+The maintainer confirmed that there were no issues with wrappers around Piper, especially when they improve usability.
 
+Key feedback:
+
+> "I have no problem with wrappers around Piper, especially if they improve usability :)"
+
+The maintainer explained that Piper's GPL licensing is related to its dependency on the upstream `espeak-ng` phonemizer and suggested using Piper's built-in local HTTP server for easier browser-based testing.
+
+This feedback confirmed the design direction of cori_tts as a usability-focused layer built on top of Piper while maintaining open-source compatibility.
 ---
 
 ## 🚀 6. How to use cori_tts
