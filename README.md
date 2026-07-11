@@ -173,6 +173,7 @@ Key feedback:
 The maintainer explained that Piper's GPL licensing is related to its dependency on the upstream `espeak-ng` phonemizer and suggested using Piper's built-in local HTTP server for easier browser-based testing.
 
 This feedback confirmed the design direction of cori_tts as a usability-focused layer built on top of Piper while maintaining open-source compatibility.
+
 ---
 
 ## 🚀 6. How to use cori_tts
