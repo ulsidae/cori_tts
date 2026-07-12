@@ -25,7 +25,7 @@ This document summarizes the cori_tts project and the design decisions behind bu
   
 | 📚 Table of Contents |
 | :--- |
-| [📌 Why the name “cori_tts” ?](#0) |
+| [📌 Why the name “cori_tts”?](#0) |
 | [🧠 Background and why Piper TTS was chosen](#1) |
 | [⚙️ Limitations of Piper TTS and improvements made](#2) |
 | [🔄 Design trade-offs and rationale](#3) |
@@ -34,7 +34,7 @@ This document summarizes the cori_tts project and the design decisions behind bu
 
 ---
 
-<h2 id="0">📌 1. Why the name “cori_tts” ?</h2>
+<h2 id="0">📌 1. Why the name “cori_tts”?</h2>
 
 The name comes from the Piper TTS public-domain voice model **“cori”**, which was used as the initial test voice.
 
@@ -172,7 +172,7 @@ Key feedback:
 
 > "I have no problem with wrappers around Piper, especially if they improve usability :)"
 
-The maintainer explained that Piper's GPL licensing is related to its dependency on the upstream `espeak-ng` phonemizer and suggested using Piper's built-in local HTTP server for easier browser-based testing.
+The maintainer explained the relationship between Piper's GPL licensing and its upstream dependencies, including `espeak-ng`, and suggested using Piper's built-in local HTTP server for easier browser-based testing.
 
 This feedback confirmed the design direction of cori_tts as a usability-focused layer built on top of Piper while maintaining open-source compatibility.
 
@@ -180,4 +180,106 @@ This feedback confirmed the design direction of cori_tts as a usability-focused 
 
 <h2 id="5">🚀 6. How to use cori_tts</h2>
 
-> TODO
+> **Note**:
+> cori_tts is currently designed for Windows.
+> Support for Linux and other operating systems is planned for future releases.
+
+### 1. Install Piper TTS
+
+Download Piper TTS from the official repository:
+
+Official repository: [Piper TTS](https://github.com/OHF-Voice/piper1-gpl)
+
+Install the required Python package:
+
+```bash
+pip install piper-tts
+```
+
+> **Tip**: 
+> If you encounter issues while using Piper TTS, installing [`espeak-ng`](https://github.com/espeak-ng/espeak-ng) may resolve them.
+
+---
+
+### 2. Download this repository
+
+Clone or download the `cori_tts` repository.
+
+---
+
+### 3. Add `piper.exe`
+
+Copy the `piper.exe` file from your Piper TTS installation into the `piper/` directory of this project.
+
+---
+
+### 4. Download a voice model
+
+Download your preferred voice model from: [Piper TTS Voice Models](https://huggingface.co/rhasspy/piper-voices/tree/main)
+
+> **Important**
+> Voice models may use different licenses.
+> Please review the license before using a model.
+
+---
+
+### 5. Place the model files
+
+Copy the following files into the `models/` directory:
+
+- `.onnx`
+- `.json`
+- `MODEL_CARD`
+
+All three files are required for each voice model.
+
+---
+
+### 6. (Optional) Customize the character image
+
+You can replace `character.png` to visually distinguish different voice models.
+
+If you use multiple models, you may create multiple copies of `cori_tts`, each configured for a different voice.
+
+---
+
+### 7. Launch cori_tts
+
+If you follow this instruction, the cori_tts directory structure may look like this:
+
+```
+cori_tts/
+├── main.py              
+├── character.png        
+├── models/             
+│   └── [model_name].onnx
+│   └── [model_name].json
+│   └── MODEL_CARD
+└── piper/               
+    └── piper.exe        
+```
+
+Run `main.py`.
+
+Write the text you want to synthesize in a `.txt` file, then select that file from the application.
+
+---
+
+### 8. Wait for synthesis
+
+After processing is complete, the generated audio file will be saved in the `output/` directory.
+
+---
+
+### 9. You're ready to use cori_tts!
+
+You can now continue generating speech by selecting any supported text file through `cori_tts`.
+
+---
+
+### 📚 Building an executable
+
+If you prefer a standalone executable, you can build `cori_tts` using PyInstaller.
+
+
+> The goal of cori_tts is to make local TTS technology more accessible by reducing the technical barriers of existing command-line workflows.
