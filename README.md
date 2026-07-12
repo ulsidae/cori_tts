@@ -166,7 +166,7 @@ The main questions were:
 - How the GPL license applies to a project built around Piper
 - Whether there were recommended approaches for improving local usage
 
-The maintainer confirmed that there were no issues with wrappers around Piper, especially when they improve usability.
+The maintainer replied that there were no issues with wrappers around Piper, especially when they improve usability.
 
 Key feedback:
 
