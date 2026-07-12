@@ -261,12 +261,13 @@ cori_tts/
 
 Run `main.py`.
 
-Write the text you want to synthesize in a `.txt` file, then select that file from the application.
+Write the text you want to synthesize in a `.txt` file, then select that file by clicking the "Select TXT" button.
 
 ---
 
 ### 8. Wait for synthesis
 
+By pressing the "RUN TTS" button, you can generate the synthesized audio.
 After processing is complete, the generated audio file will be saved in the `output/` directory.
 
 ---
