@@ -217,7 +217,7 @@ Copy the `piper.exe` file from your Piper TTS installation into the `piper/` dir
 
 Download your preferred voice model from: [Piper TTS Voice Models](https://huggingface.co/rhasspy/piper-voices/tree/main)
 
-> **Important**
+> **Important**: 
 > Voice models may use different licenses.
 > Please review the license before using a model.
 
