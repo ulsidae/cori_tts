@@ -22,19 +22,19 @@ This document summarizes the cori_tts project and the design decisions behind bu
 > It is freely available as open-source software.
 
 ---
-
-## 📚 Table of Contents
-
-- 📌 Why the name “cori_tts”
-- 🧠 Background and why Piper TTS was chosen
-- ⚙️ Limitations of Piper TTS and improvements made
-- 🔄 Design trade-offs and rationale
-- 📩 Feedback from upstream maintainers
-- 🚀 How to use cori_tts
+  
+| 📚 Table of Contents |
+| :--- |
+| [📌 Why the name “cori_tts” ?](#0) |
+| [🧠 Background and why Piper TTS was chosen](#1) |
+| [⚙️ Limitations of Piper TTS and improvements made](#2) |
+| [🔄 Design trade-offs and rationale](#3) |
+| [📩 Feedback from upstream maintainers](#4) |
+| [🚀 How to use cori_tts](#5) |
 
 ---
 
-## 📌 1. Why the name “cori_tts”?
+<h2 id="0">📌 1. Why the name “cori_tts” ?</h2>
 
 The name comes from the Piper TTS public-domain voice model **“cori”**, which was used as the initial test voice.
 
@@ -46,11 +46,13 @@ The name stuck — simple, but unexpectedly fitting.
 
 ---
 
-## 🧠 2. Background and why Piper TTS was chosen
+<h2 id="1">🧠 2. Background and why Piper TTS was chosen</h2>
 
 ### Early development
 
 This project originally started as a high school portfolio project.
+
+<img src="https://github.com/ulsidae/cori_tts/blob/main/img/IMG_0447.PNG" height="400"/>
 
  🌐 [related video (Korean)](https://youtu.be/29DK4ZOEiGU)
 
@@ -112,7 +114,7 @@ Although its primary workflow is command-line based, it provided a far more prac
 
 ---
 
-## ⚙️ 3. Limitations of Piper TTS and improvements made
+<h2 id="2">⚙️ 3. Limitations of Piper TTS and improvements made</h2>
 
 While Piper TTS is powerful, its primary interface is aimed at developers.
 
@@ -130,7 +132,7 @@ The goal was simple:
 
 ---
 
-## 🔄 4. Design trade-offs and rationale
+<h2 id="3">🔄 4. Design trade-offs and rationale</h2>
 
 Building cori_tts involved several intentional trade-offs.
 
@@ -152,7 +154,7 @@ This also means cori_tts is not intended to replace Piper TTS, but to reduce fri
 
 ---
 
-## 📩 5. Upstream Feedback and Licensing Discussion
+<h2 id="4">📩 5. Upstream Feedback and Licensing Discussion</h2>
 
 - Running cori_tts requires placing `piper.exe` inside the `/piper` directory.
 
@@ -176,6 +178,6 @@ This feedback confirmed the design direction of cori_tts as a usability-focused 
 
 ---
 
-## 🚀 6. How to use cori_tts
+<h2 id="5">🚀 6. How to use cori_tts</h2>
 
 > TODO
