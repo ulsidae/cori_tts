@@ -68,7 +68,7 @@ However, the result was unstable:
 
 - Japanese and Korean phonetics differed significantly  
 - Audio playback interruptions occurred  
-- Approximately 15% of communication was lost  
+- Based on these early experiments, approximately 15% of communication was lost  
 
 This made it clear that the system needed a fundamental redesign.
 
