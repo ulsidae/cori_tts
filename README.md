@@ -203,11 +203,15 @@ pip install piper-tts
 
 ### 2. Download this repository
 
+<img src="https://github.com/ulsidae/cori_tts/blob/main/img/1.png" height="400"/>
+
 Clone or download the `cori_tts` repository.
 
 ---
 
 ### 3. Add `piper.exe`
+
+<img src="https://github.com/ulsidae/cori_tts/blob/main/img/2.png" height="400"/>
 
 Copy the `piper.exe` file from your Piper TTS installation into the `piper/` directory of this project.
 
@@ -225,6 +229,8 @@ Download your preferred voice model from: [Piper TTS Voice Models](https://huggi
 
 ### 5. Place the model files
 
+<img src="https://github.com/ulsidae/cori_tts/blob/main/img/3.png" height="400"/>
+
 Copy the following files into the `models/` directory:
 
 - `.onnx`
@@ -236,6 +242,8 @@ All three files are required for each voice model.
 ---
 
 ### 6. (Optional) Customize the character image
+
+<img src="https://github.com/ulsidae/cori_tts/blob/main/img/4.png" height="400"/>
 
 You can replace `character.png` to visually distinguish different voice models.
 
@@ -260,6 +268,8 @@ cori_tts/
 ```
 
 Run `main.py`.
+
+<img src="https://github.com/ulsidae/cori_tts/blob/main/img/5.png" height="400"/>
 
 Write the text you want to synthesize in a `.txt` file, then select that file by clicking the "Select TXT" button.
 
